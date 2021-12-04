@@ -2,11 +2,11 @@ const container = document.querySelector(".container");
 const preloader = document.querySelector(".preloader");
 
 const getData = async () => {
-  const response = await fetch("https://randomuser.me/api/?results=10", {
+  const ojidaniye = await fetch("https://randomuser.me/api/?results=10", {
     method: "GET",
   });
 
-  const data = await response.json();
+    const data = await ojidaniye.json();
 
   preloader.style.display = "none";
 
