@@ -1,0 +1,13 @@
+.btn {
+    width: 500px;
+    line-height: 36px;
+    margin: 50px auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: rgb(172, 154, 184);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+}
