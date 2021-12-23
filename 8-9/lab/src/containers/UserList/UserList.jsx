@@ -18,7 +18,7 @@ const UserList = () => {
     <div>
       {usersData.length === 0 && (
         <>
-          <h1 style={{ textAlign: "center" }}>There are no users</h1>
+          <h1 style={{ textAlign: "center" }}>Пользователи не найдены</h1>
           <Button onClick={getData} />
         </>
       )}

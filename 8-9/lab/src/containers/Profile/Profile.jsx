@@ -5,8 +5,8 @@ import styles from "./Profile.module.css"
 const Profile = () => {
     return (
         <div className={styles.profile}>
-            <h2>Login: {localStorage.getItem("login")}</h2>
-            <h2>Password: {localStorage.getItem("password")}</h2>
+            <h2>Логин: {localStorage.getItem("login")}</h2>
+            <h2>Пароль: {localStorage.getItem("password")}</h2>
         </div>
     )
 }

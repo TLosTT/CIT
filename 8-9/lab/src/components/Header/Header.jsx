@@ -12,23 +12,23 @@ const Header = () => {
           <ul className={styles.list}>
             <li className={styles.listItem}>
               <Link className={styles.listLink} to="/">
-                Main
+                Главная
               </Link>
             </li>
             <li className={styles.listItem}>
               <Link className={styles.listLink} to="/users">
-                Users
+                Пользователи
               </Link>
             </li>
             <li className={styles.listItem}>
               <Link className={styles.listLink} to="/friends">
-                Friends
+                Друзья
               </Link>
             </li>
             {isAuth && (
               <li className={styles.listItem}>
                 <Link className={styles.listLink} to="/profile">
-                  Profile
+                  Профиль
                 </Link>
               </li>
             )}
@@ -36,7 +36,7 @@ const Header = () => {
         </div>
         <div className={styles.headerItem}>
           <Link to="/sign-in" className={styles.headerReg}>
-            Sign in
+            Зарегистрироваться
           </Link>
         </div>
       </div>

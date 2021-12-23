@@ -23,22 +23,20 @@ const Form = () => {
   return (
     <form onSubmit={sendData} className={styles.form}>
       <div className={styles.formItem}>
-        <span>Login</span>
+        <span>Логин</span>
         <input
           type="text"
-          placeholder="Please put your login"
           required
           value={data.login}
           onChange={(event) => setData({ ...data, login: event.target.value })}
         />
       </div>
       <div className={styles.formItem}>
-        <span>Password</span>
+        <span>Пароль</span>
         <input
           type="password"
           required
           value={data.password}
-          placeholder="Please put your password"
           onChange={(event) =>
             setData({ ...data, password: event.target.value })
           }
@@ -46,7 +44,7 @@ const Form = () => {
       </div>
       <div>
         <button type="submit" className={styles.btn}>
-          Send data
+          Окей
         </button>
       </div>
     </form>

@@ -8,7 +8,7 @@ const FriendList = () => {
 
   return (
     <div>
-      <h2>Friends List</h2>
+      <h2>Список друзей</h2>
 
       <div className={styles.friendsList}>
         {Boolean(friendsArr.length) ? (
@@ -26,7 +26,7 @@ const FriendList = () => {
             />
           ))
         ) : (
-          <h2>No data</h2>
+          <h2>Пусто</h2>
         )}
       </div>
     </div>

@@ -6,12 +6,21 @@ import { parseDate } from "../../Utils/parseDate";
 import Avatar from "../Avatar/Avatar";
 import styles from "./FriendCard.module.css";
 
-const FriendCard = ({ img, user, name, gender, dob, location, email, phone }) => {
-    const dispatch = useDispatch();
+const FriendCard = ({
+  img,
+  user,
+  name,
+  gender,
+  dob,
+  location,
+  email,
+  phone,
+}) => {
+  const dispatch = useDispatch();
 
-    const removeFriend = () => {
-        dispatch(removeFriends(user))
-    }
+  const removeFriend = () => {
+    dispatch(removeFriends(user));
+  };
 
   return (
     <div className={styles.card}>
@@ -20,7 +29,7 @@ const FriendCard = ({ img, user, name, gender, dob, location, email, phone }) =>
         <h3 className={styles.headTitle}>
           {name.title} {name.first} {name.last}
         </h3>
-        <button onClick={() => removeFriend(user)}>Remove friend</button>
+        <button onClick={() => removeFriend(user)}>Удалить из друзей</button>
       </div>
       <div className={styles.cardBody}>
         <div className={styles.bodyItem}>
